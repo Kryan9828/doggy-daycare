@@ -2,8 +2,28 @@
 // Those instructions will give you details on each step.
 
 // STEP ONE - Create your Data Model.
-let dataModel = null;  // Assign your data model here, instead of null. This should be an array of "dog" objects.
+let dataModel = [
+  {
+    name: "Kalix",
+    breed: "Black Lab",
+    age: 10,
+    likesTreats: true,
+  },
+  {
+    name: "Jake",
+    breed: "German Shepard Mix",
+    age: 7,
+    likesTreats: true,
+  },
+  {
+    name: "Buddy",
+    breed: "Boxer",
+    age: 4,
+    likesTreats: true,
+  }
 
+];  // Assign your data model here, instead of null. This should be an array of "dog" objects.
+console.log(dataModel)
 
 // When this function is run, it is meant to use the user input to build
 // a dog object, and add the dog object to the data model array.
@@ -31,7 +51,14 @@ function onSubmitDog (event) {
   // How can you insert this dog object into the dogs array?
 
   // YOUR CODE HERE
-
+  let dog = {
+    name : `${name}`,
+    breed: `${breed}`,
+    age: `${age}`,
+    likesTreats: `${likesTreats}`,
+    }
+dataModel.push (dog)
+console.log(dataModel)
 
   renderDogList(); // Now that we have added a new dog to the data model,
                    // we should render the dog list on the page again.
