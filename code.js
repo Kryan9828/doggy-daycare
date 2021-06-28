@@ -87,6 +87,24 @@ function renderDogList() {
   // code is in the instructions.
 
   // YOUR CODE HERE
+  if (dataModel < [0]){
+    let listItem = document.createElement("li")
+    listItem.innerHTML = "No Dogs!"
+    list.append(listItem)    
+  }
+  for (let i  = 0; i<dataModel.length;i++){
+    let doglist = dataModel[i]
+    if (doglist >= [0]){
+      let listItem = document.createElement("li")
+      listItem.innerHTML = `We have a/an ${dataModel[i].age} ${dataModel[i].breed} named ${dataModel[i].name} who likes treats: ${dataModel[i].likesTreats}`
+      list.append(listItem)
+      let sendHomeButton= document.createElement("button")
+      sendHomeButton.append("Send Home")
+      sendHomeButton.addEventListener("click", function (){removeDog()})
+      listItem.append(sendHomeButton)
+    }
+  }
+
 }
 
 
