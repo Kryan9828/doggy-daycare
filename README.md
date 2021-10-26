@@ -1,5 +1,3 @@
-# Kenzie Academy JavaScript Assignment
+Doggie Daycare Program
 
-Complete your work inside of `code.js`
-
-Follow the instructions provided on my.kenzie.academy for this assignment.
+Starts with several dogs already in daycare. Inputs allow for dogs to be stored as an object to an already created array and retrieved by the owners.
